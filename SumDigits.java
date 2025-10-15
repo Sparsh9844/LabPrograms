@@ -1,0 +1,20 @@
+package myFunc;
+
+import java.util.Scanner;
+
+public class SumDigits {
+	public static void main(String[] args) {
+		Scanner input=new Scanner(System.in);
+		System.out.println("enter the number:");
+		int number = input.nextInt();
+		
+		int sum = 0;
+		while(number!=0) {
+			sum += number%10;
+			number = number/10;
+			System.out.println(+sum);
+		}
+		System.out.println("total sum is:"+sum);
+	}
+
+}
